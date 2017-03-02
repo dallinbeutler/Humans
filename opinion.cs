@@ -15,11 +15,12 @@ namespace WpfApplication1
         {
             topic = inTop;
             feelings = inFeel;
+            Console.Out.WriteLine("opinion made");
         }
 
         public string display()
         {
-            return "-" + topic + " " + feelings;
+            return "\n- " + topic + " " + feelings ;
         }
     }
 

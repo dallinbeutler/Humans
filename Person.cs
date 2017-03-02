@@ -38,13 +38,26 @@ namespace WpfApplication1
                 }
             }
         }
+        public void addOpinion(string inTopic, float infeelings)
+        {
+            foreach (Opinion op in opinions)
+                if (inTopic == op.topic)
+                    return;
+            opinions.Add(new Opinion(inTopic, infeelings));
+        }
         public override string ToString()
         {
             string outstring = name;
             outstring += "\nMalleability:" + malleability;
             outstring += "\nCharisma:" + charisma;
-            outstring += "\nOpinions:";
-            foreach (Opinion o in opinions){
+
+            return outstring;
+        }
+        public string opinionToString()
+        {
+            string outstring = "\nOpinions:"; ;
+            foreach (Opinion o in opinions)
+            {
                 outstring += o.display();
             }
             return outstring;
