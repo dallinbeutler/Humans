@@ -9,10 +9,10 @@ namespace WpfApplication1
     public class Person
     {
         bool gender;
-        string name;
-        float malleability;
-        float charisma;
-        List<Opinion> opinions;
+        public string name;
+        public float malleability;
+        public float charisma;
+        public List<Opinion> opinions;
 
         public Person(String inName)
         {
@@ -24,7 +24,7 @@ namespace WpfApplication1
             opinions = new List<Opinion>();
         }
 
-        public void interact(Person p)
+/*        public void interact(Person p)
         {
             Random r = new Random();
             int choiceOp = (int)Math.Round(r.NextDouble() * (double)(opinions.Count));
@@ -37,7 +37,13 @@ namespace WpfApplication1
                     break;
                 }
             }
-        }
+        }*/
+
+/*        public void interact(int index, Person p)
+        {
+            p.opinions[index].feelings += opinions[choiceOp].feelings * charisma * p.malleability;
+            opinions[choiceOp].feelings += p.opinions[i].feelings * p.charisma * malleability;
+        }*/
         public void addOpinion(string inTopic, float infeelings)
         {
             foreach (Opinion op in opinions)
@@ -48,14 +54,13 @@ namespace WpfApplication1
         public override string ToString()
         {
             string outstring = name;
-            outstring += "\nMalleability:" + malleability;
-            outstring += "\nCharisma:" + charisma;
-
             return outstring;
         }
         public string opinionToString()
         {
-            string outstring = "\nOpinions:"; ;
+            string outstring = "\nMalleability:" + malleability;
+            outstring += "\nCharisma:" + charisma;
+            outstring += "\nOpinions:"; ;
             foreach (Opinion o in opinions)
             {
                 outstring += o.display();

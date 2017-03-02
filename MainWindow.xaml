@@ -7,24 +7,30 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="731.825" Width="853.1">
     <Grid OpacityMask="Black" Background="#FFC7C7C7">
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="21,26,0,0" TextWrapping="Wrap" Text="name" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="label" Content="enter name&#xD;&#xA;" HorizontalAlignment="Left" Margin="21,0,0,0" VerticalAlignment="Top" Width="85" Height="26"/>
-        <CheckBox x:Name="checkBox" Content="male" HorizontalAlignment="Left" Margin="30,61,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="21,26,0,0" TextWrapping="Wrap" Text="name" VerticalAlignment="Top" Width="85"/>
+        <Label x:Name="Person" Content="Person" HorizontalAlignment="Left" Margin="21,0,0,0" VerticalAlignment="Top" Width="85" Height="26"/>
+        <CheckBox x:Name="gendercheck" Content="male" HorizontalAlignment="Left" Margin="30,61,0,0" VerticalAlignment="Top" IsChecked="True"/>
         <Button x:Name="button" Content="add" HorizontalAlignment="Left" Margin="92,55,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="682" Margin="189,10,0,0" VerticalAlignment="Top" Width="336" IsSynchronizedWithCurrentItem="True" MouseUp="listView_MouseUp">
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="219" Margin="264,26,0,0" VerticalAlignment="Top" Width="223" IsSynchronizedWithCurrentItem="True" MouseUp="listView_MouseUp">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <TextBox x:Name="topicbox" HorizontalAlignment="Left" Height="23" Margin="30,188,0,0" TextWrapping="Wrap" Text="topic" VerticalAlignment="Top" Width="120"/>
-        <Slider x:Name="slider" HorizontalAlignment="Left" Margin="21,216,0,0" VerticalAlignment="Top" Width="146" Value="1" Maximum="1" TickPlacement="Both" Minimum="-1"/>
-        <Button x:Name="button1" Content="add" HorizontalAlignment="Left" Margin="75,251,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
-        <Button x:Name="button2" Content="simulate" HorizontalAlignment="Left" Margin="92,406,0,0" VerticalAlignment="Top" Width="75"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="530,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="249" Width="315" Background="#FFBDFFCC"/>
-        <CheckBox x:Name="randomfeelingscheck" Content="rand?" HorizontalAlignment="Left" Margin="21,254,0,0" VerticalAlignment="Top" IsChecked="True"/>
-        <TextBlock x:Name="myConsole" HorizontalAlignment="Left" Margin="530,264,0,0" TextWrapping="Wrap" Text="console output:" VerticalAlignment="Top" Height="428" Width="305" Background="White"/>
+        <TextBox x:Name="topicbox" HorizontalAlignment="Left" Height="23" Margin="21,114,0,0" TextWrapping="Wrap" Text="topic" VerticalAlignment="Top" Width="146"/>
+        <Slider x:Name="slider" HorizontalAlignment="Left" Margin="21,142,0,0" VerticalAlignment="Top" Width="85" Value="1" Maximum="1" TickPlacement="Both" Minimum="-1"/>
+        <Button x:Name="button1" Content="add" HorizontalAlignment="Left" Margin="92,177,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
+        <Button x:Name="simulateallbutton" Content="simulate all" HorizontalAlignment="Left" Margin="396,293,0,0" VerticalAlignment="Top" Width="74" Click="button2_Click" Height="29"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="492,26,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="219" Width="343" Background="#FFBDFFCC"/>
+        <CheckBox x:Name="randomfeelingscheck" Content="rand?" HorizontalAlignment="Left" Margin="120,150,0,0" VerticalAlignment="Top" IsChecked="True"/>
+        <TextBlock x:Name="myConsole" HorizontalAlignment="Left" Margin="10,464,0,0" TextWrapping="Wrap" Text="console output:" VerticalAlignment="Top" Height="228" Width="825" Background="White"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="264,254,0,0" VerticalAlignment="Top" Width="116" Height="29" SelectionChanged="comboBox_SelectionChanged"/>
+        <Label x:Name="label1" Content="actor 1&#xD;&#xA;" HorizontalAlignment="Left" Margin="264,1,0,0" VerticalAlignment="Top" Width="206" Height="26"/>
+        <TextBox x:Name="otherinfobox" HorizontalAlignment="Left" Height="208" Margin="492,251,0,0" TextWrapping="Wrap" Text="other's info" VerticalAlignment="Top" Width="343" Background="#FFFFCDCD"/>
+        <Button x:Name="button3" Content="simulate" HorizontalAlignment="Left" Margin="396,257,0,0" VerticalAlignment="Top" Width="75" Click="button3_Click"/>
+        <Label x:Name="label_Copy" Content="Opinion&#xA;" HorizontalAlignment="Left" Margin="21,88,0,0" VerticalAlignment="Top" Width="85" Height="26"/>
+        <CheckBox x:Name="randNameCheck" Content="rand?" HorizontalAlignment="Left" Margin="111,30,0,0" VerticalAlignment="Top" IsChecked="True"/>
 
     </Grid>
 </Window>

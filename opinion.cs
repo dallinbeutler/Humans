@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WpfApplication1
 {
-    class Opinion
+    public class Opinion
     {
         public string topic;
         public float feelings;
@@ -22,6 +22,7 @@ namespace WpfApplication1
         {
             return "\n- " + topic + " " + feelings ;
         }
+
     }
 
 }

@@ -12,3 +12,5 @@ c:\users\dbeutl1a\documents\visual studio 2015\Projects\humans\WpfApplication1\o
 c:\users\dbeutl1a\documents\visual studio 2015\Projects\humans\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
 c:\users\dbeutl1a\documents\visual studio 2015\Projects\humans\WpfApplication1\obj\Debug\WpfApplication1.exe
 c:\users\dbeutl1a\documents\visual studio 2015\Projects\humans\WpfApplication1\obj\Debug\WpfApplication1.pdb
+c:\users\dbeutl1a\documents\visual studio 2015\Projects\humans\WpfApplication1\bin\Debug\RandomNameGenerator.dll
+c:\users\dbeutl1a\documents\visual studio 2015\Projects\humans\WpfApplication1\bin\Debug\RandomNameGeneratorLibrary.dll
